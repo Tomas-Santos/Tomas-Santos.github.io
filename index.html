@@ -4,122 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Exemplos HTML</title>
 </head>
-<h1>Titulo 1</h1>
-<h2>Titulo 2</h2>
-<h3>Titulo 3</h3>
-<h4>Titulo 4</h4>
 
 <body>
-    <p>
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <br>aaaaaaaaaaaaaaaaaaaaa
-    </p>
-
-    <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">clica aqui</a> <br>
-    <a href="https://www.nasa.gov/" target="_blank"><img src="assets/img_1.jpg" alt="NASA" id="img_nasa"></a>
-    <!--Linha Horizontal-->
-    <hr>
-    <br>
-    <!--negrito-->
-    <b>yo</b>
-    <br>
-    <!--italico-->
-    <i>yo</i>
-    <br>
-    <!--sublinhado-->
-    <u>yo</u>
-    <br>
-    <!--rasurado-->
-    <s>yo</s>
-    <br>
-    <!--Texto superior-->
-    x<sup>2</sup>=x*x
-    <br>
-    <!--Texto inferior-->
-    H<sub>2</sub>O
-    <br>
-    <!--Palavra Marcada-->
-    <mark>Texto Destacado</mark>
-    <br>
-    <!-- Span -->
-    <p><span style="color: blue">Nasa</span>span</p>
-    <!-- Tabela -->
-    <table border="1">
-        <tr>
-            <td colspan="6">Hórario</td>
-        </tr>
-        <tr>
-            <td>Horas</td>
-            <td>Segunda</td>
-            <td>Terça</td>
-            <td>Quarta</td>
-            <td>Quinta</td>
-            <td>Sexta</td>
-        </tr>
-        <tr>
-            <td>8:20 <br> 9:05</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td rowspan="3">PSI - T2 <br> S-11</td>
-        </tr>
-        <tr>
-            <td>9:05 <br> 9:50</td>
-            <td rowspan="2">PSI - T2 <br> S-11</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10:10 <br> 10:55</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-
-    <!--Lista com marcas-->
-    <ul>
-        <li>Lisboa</li>
-        <li>Cacém</li>
-        <li>Sintra</li>
-    </ul>
-
-    <!--Lista numeradas-->
-    <ol>
-        <li>Monitores</li>
-        <li>smartphones</li>
-        <li>portateis</li>
-    </ol>
-
-    <!--Glossários-->
-    <dl>
-        <dt>NASA</dt>
-        <dd>Nasa é uma empresa aeroespacial dos EUA</dd>
-    </dl>
-
-    <!--Hiperligação para o topo da página-->
-    <a href="#top">
-        Topo da Página
-    </a>
+    <header>
+        <h1>Tomás Santos</h1>
+        <nav id="nav_container">
+            <ul>
+                <li><a href="#descricao"><b>Sobre mim</b></a></li>
+                <li><a href="#educacao"><b>Educação</b></a></li>
+                <li><a href="#exp"><b>Experiência</b></a></li>
+                <li><a href="#compt"><b>Competências</b></a></li>
+                <li><a href="#glossario"><b>Glossário</b></a></li>
+                <li><a href="#contacto"><b>Contacto</b></a></li>
+            </ul>
+        </nav>
+    </header>
     <br>
     <br>
-    <!--Card-->
-    <div id="card">
-        <div id="imagem">
-            <img src="assets/img2.jpg" width="392">
-        </div>
-        <div id="descricao">
-            <h4>Tyrannosaurus rex</h4>
-            <p>Bicho pré-historico, que mete medo</p>
-        </div>
+    <div id="containerIMG">
+        <img src="assets2/img1.png" width="180px">
+    </div>
+    <br>
+    <div id="descricao">
+        <p>Olá, sou o Tomás Santos, um programador e entusiasta pelo desenvolvimento de jogos. 
+        </p>
+        <p>Tenho experiência em desenvolvimento front-end e back-end com HTML, CSS e JavaScript, C++ e C#</p>
     </div>
 
+    <div>
+        <h3 id="educacao">Educação</h3>
+    </div>
+    <div id="line"></div>
 
+    <div id="tableDiv">
+        <table border="1">
+            <tr>
+                <th>Instituição</th>
+                <th>Curso</th>
+                <th>Ano de Conclusão</th>
+            </tr>
+            <tr>
+                <td>Escola Secundária Raul Proença</td>
+                <td>Ensino Secundário</td>
+                <td>2024</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h3 id="exp">Experiência</h3>
+    </div>
+    <div id="line"></div>
+
+    <div id="expTableDiv">
+        <table border="1">
+            <tr>
+                <th>Tipo</th>
+                <th>Função</th>
+                <th>Duração</th>
+            </tr>
+            <tr>
+                <td>Estágio</td>
+                <td>Desenvolvimento de Jogos em Web</td>
+                <td>300 horas</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <h3 id="compt">Competências</h3>
+    </div>
+    <div id="line"></div>
+
+    <div id="compList">
+        <ul>
+            <li>C++</li>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>MySQL</li>
+            <li>Blender</li>
+            <li>Photoshop</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h3 id="glossario">Glossário</h3>
+    </div>
+    <div id="line"></div>
+
+    <dl id="glossario">
+        <dt>HTML:</dt>
+        <dd>HyperText Markup Language - liguagem de marcação para construção de páginas web.</dd>
+        <dt>CSS:</dt>
+        <dd>Cascadian Style Sheets - Linguagem de estilos utilizada para definir a aparência de páginas web</dd>
+    </dl>
+    <br>
+    <div>
+        <h3 id="contacto">Contacto</h3>
+    </div>
+    <div id="line"></div>
+    <div id="contact">
+        <p>Email: <a href="mailto:tomasantos2407@gmail.com">tomasantos2407@gmail.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tomás Santos. Todos os direitos reservados.</p>
+        <a href="">Linkedin</a>
+        <a href="">Github</a>
+    </footer>
 </body>
-<script src="js/script.js"></script>
 
 </html>
