@@ -74,11 +74,11 @@ header a:hover {
     border-color: rgb(62, 48, 116);
 }
 
-#descricao{
+#description{
     padding-bottom: 30px;
 }
 
-#descricao p{
+#description p{
     text-align: center;
 }
 
@@ -111,7 +111,7 @@ table th{
     padding-left: 29%;
 }
 
-#compList{
+#skillList{
     padding-left: 30%;
     padding-bottom: 30px;
 }
