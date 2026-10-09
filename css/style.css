@@ -53,25 +53,40 @@ header a:hover {
     color: aquamarine;
 }
 
-#nav_container ul {
+.nav_container ul {
     list-style-type: none;
 }
 
-#nav_container ul li {
+.nav_container ul li {
     padding: 15px;
-    display: inline;
+    display: inline-flex;
+    font-weight: bold;
 }
 
-#containerIMG{
+.nav_container ul li a{
+    transition: all ease-in-out 0.1s;
+}
+
+.nav_container ul li a:hover{
+    padding: 0;
+    font-size: 120%;
+}
+
+.containerIMG{
     text-align: center;
     padding: 5px;
 }
 
-#containerIMG img {
+.containerIMG img {
     border-style: solid;
     border-radius: 100%;
     border-width: 5px;
     border-color: rgb(62, 48, 116);
+    transition: transform ease-in-out 0.2s;
+}
+
+.containerIMG img:hover{
+    transform: scale(1.1);
 }
 
 #description{
@@ -130,3 +145,4 @@ table th{
     border-top: 2px solid lightseagreen;
     padding-bottom: 10px;
 }
+
